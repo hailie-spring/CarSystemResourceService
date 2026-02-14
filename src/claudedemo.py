@@ -1,7 +1,14 @@
+import os
 from anthropic import Anthropic
 from dotenv import load_dotenv
 
 load_dotenv()
+
+# Get environment variables
+API_KEY = os.getenv("API_KEY")
+BASE_URL = os.getenv("BASE_URL")
+MODEL_NAME = os.getenv("MODEL_NAME")
+
 # ANSI color codes
 BLUE = "\033[94m"
 GREEN = "\033[92m"
