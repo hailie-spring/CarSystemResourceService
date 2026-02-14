@@ -1,14 +1,12 @@
 from anthropic import Anthropic
 from dotenv import load_dotenv
 
-
+load_dotenv()
 # ANSI color codes
 BLUE = "\033[94m"
 GREEN = "\033[92m"
 RESET = "\033[0m"
-API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQUktMTc3MDM0NzQ1MDg5NCIsInJvbGVzIjpbIjM1Il0sInVzZXJfaWQiOjE3NTQsInVzZXJuYW1lIjoiaGFpbGllX2Nob3UiLCJyb2xlX25hbWVzIjpbIlJPUC1haWVuZHBvaW50LVVzZXIiXSwidG9rZW5fdHlwZSI6ImFjY2VzcyIsImV4cCI6MTc3ODEyMzQ1NCwianRpIjoiNzJhMzdiNTYtMDMwOS0xMWYxLTkxMjgtNjIxOTg5YjUxZjJlIiwidmVyc2lvbiI6IjIwMjQtMTEtMDEifQ.36T3zcKjB33jQ6e2Fa22sBf4OAwv-tJbC0PcmxKugxs"
-MODEL_NAME = "claude-3.5-haiku"
-BASE_URL= "https://api.rdsec.trendmicro.com/prod/aiendpoint"
+
 
 # Initialize the Anthropic client
 client = Anthropic(
